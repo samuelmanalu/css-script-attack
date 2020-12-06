@@ -1,0 +1,6 @@
+@-moz-document regexp(".*(%3E|%22|%27|%3E).*")
+{
+	body { color: yellow; background: red; }
+	body:before {content: 'XSS Attack detected'}	
+	body * {display:none}
+}
